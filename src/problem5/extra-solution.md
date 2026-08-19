@@ -13,3 +13,4 @@
 - We can have 2 node for student services with load balancer to handle high traffic and other services (db server nodes, message queue node, portal node) use single node, this architecture is flexible and scalable
 - We can use message queue to communicate between services for high availability and fault tolerance and also help de-couple services (RabbitMQ or Kafka, but I just know RabbitMQ)
 - We can use Redis for caching to reduce database load and improve performance for read operations between services
+- Finally, we orchestrate all of these nodes by docker-compose for easy deployment and management
